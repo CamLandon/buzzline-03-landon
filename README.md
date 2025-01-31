@@ -52,7 +52,7 @@ py -m producers.json_producer_case
 
 What did we name the topic used with JSON data?
 ```shell
-Cameron Landon: 'topic'
+Answer: 'topic'
 ```
 
 ## Task 6. Start a JSON Consumer
@@ -70,7 +70,7 @@ py -m consumers.json_consumer_case
 
 What did we name the topic used with JSON data?
 ```shell
-Cameron Landon: 'topic'
+Answer: 'topic'
 ```
 
 ## Task 7. Start a CSV Producer
@@ -86,7 +86,7 @@ py -m producers.csv_producer_case
 
 What did we name the topic used with csv data?
 ``` shell
-Cameron Landon: "SMOKER_TOPIC"
+Answer: "SMOKER_TOPIC"
 ```
 
 ## Task 8. Start a CSV Consumer
@@ -101,7 +101,7 @@ py -m consumers.json_consumer_case
 
 What did we name the topic used with csv data?
 ```shell
-Cameron Landon: "SMOKER_TOPIC"
+Answer: "SMOKER_TOPIC"
 ```
 
 ## About the Smart Smoker (CSV Example)

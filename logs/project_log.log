@@ -4854,3 +4854,183 @@
 2025-01-30 21:11:49.991 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:11:49.980826', 'temperature': 96.8}
 2025-01-30 21:11:49.992 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
 2025-01-30 21:11:49.993 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:11:54.987 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:11:54.985514', 'temperature': 97.2}
+2025-01-30 21:11:55.100 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:11:54.985514', 'temperature': 97.2}
+2025-01-30 21:11:55.101 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:11:55.102 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:11:59.991 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:11:59.989399', 'temperature': 97.6}
+2025-01-30 21:12:00.000 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:11:59.989399', 'temperature': 97.6}
+2025-01-30 21:12:00.002 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:00.003 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:04.995 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:04.993577', 'temperature': 98.0}
+2025-01-30 21:12:05.005 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:04.993577', 'temperature': 98.0}
+2025-01-30 21:12:05.006 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:05.007 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:09.999 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:09.997764', 'temperature': 98.4}
+2025-01-30 21:12:10.008 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:09.997764', 'temperature': 98.4}
+2025-01-30 21:12:10.009 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:10.010 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:15.004 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:15.002176', 'temperature': 98.8}
+2025-01-30 21:12:15.012 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:15.002176', 'temperature': 98.8}
+2025-01-30 21:12:15.012 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:15.014 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:20.009 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:20.007045', 'temperature': 99.2}
+2025-01-30 21:12:20.017 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:20.007045', 'temperature': 99.2}
+2025-01-30 21:12:20.019 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:20.020 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:25.013 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:25.011411', 'temperature': 99.6}
+2025-01-30 21:12:25.022 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:25.011411', 'temperature': 99.6}
+2025-01-30 21:12:25.023 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:25.024 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:30.016 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:30.015075', 'temperature': 100.0}
+2025-01-30 21:12:30.026 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:30.015075', 'temperature': 100.0}
+2025-01-30 21:12:30.027 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:30.028 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:35.020 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:35.018564', 'temperature': 100.4}
+2025-01-30 21:12:35.029 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:35.018564', 'temperature': 100.4}
+2025-01-30 21:12:35.030 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:35.031 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:40.023 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:40.022955', 'temperature': 100.8}
+2025-01-30 21:12:40.028 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:40.022955', 'temperature': 100.8}
+2025-01-30 21:12:40.029 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:40.030 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:45.027 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:45.025622', 'temperature': 101.2}
+2025-01-30 21:12:45.035 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:45.025622', 'temperature': 101.2}
+2025-01-30 21:12:45.037 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:45.038 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:50.035 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:50.033002', 'temperature': 101.6}
+2025-01-30 21:12:50.042 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:50.033002', 'temperature': 101.6}
+2025-01-30 21:12:50.043 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:50.044 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:12:55.039 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:12:55.037813', 'temperature': 102.0}
+2025-01-30 21:12:55.047 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:12:55.037813', 'temperature': 102.0}
+2025-01-30 21:12:55.049 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:12:55.049 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:00.043 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:00.041856', 'temperature': 102.4}
+2025-01-30 21:13:00.049 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:00.041856', 'temperature': 102.4}
+2025-01-30 21:13:00.050 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:00.050 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:05.046 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:05.045946', 'temperature': 102.8}
+2025-01-30 21:13:05.051 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:05.045946', 'temperature': 102.8}
+2025-01-30 21:13:05.052 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:05.052 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:10.050 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:10.048174', 'temperature': 103.2}
+2025-01-30 21:13:10.054 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:10.048174', 'temperature': 103.2}
+2025-01-30 21:13:10.055 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:10.056 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:15.054 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:15.051589', 'temperature': 103.6}
+2025-01-30 21:13:15.060 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:15.051589', 'temperature': 103.6}
+2025-01-30 21:13:15.061 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:15.062 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:20.057 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:20.056433', 'temperature': 104.0}
+2025-01-30 21:13:20.066 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:20.056433', 'temperature': 104.0}
+2025-01-30 21:13:20.067 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:20.068 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:25.062 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:25.060155', 'temperature': 104.4}
+2025-01-30 21:13:25.070 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:25.060155', 'temperature': 104.4}
+2025-01-30 21:13:25.072 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:25.073 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:30.065 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:30.064335', 'temperature': 104.8}
+2025-01-30 21:13:30.073 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:30.064335', 'temperature': 104.8}
+2025-01-30 21:13:30.074 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:30.075 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:35.070 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:35.068155', 'temperature': 105.2}
+2025-01-30 21:13:35.078 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:35.068155', 'temperature': 105.2}
+2025-01-30 21:13:35.080 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:35.080 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:40.074 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:40.072028', 'temperature': 105.6}
+2025-01-30 21:13:40.082 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:40.072028', 'temperature': 105.6}
+2025-01-30 21:13:40.083 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:40.084 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:45.077 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:45.076193', 'temperature': 106.0}
+2025-01-30 21:13:45.085 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:45.076193', 'temperature': 106.0}
+2025-01-30 21:13:45.086 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:45.087 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:50.081 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:50.079903', 'temperature': 106.4}
+2025-01-30 21:13:50.089 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:50.079903', 'temperature': 106.4}
+2025-01-30 21:13:50.091 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:50.092 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:13:55.085 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:13:55.084567', 'temperature': 106.8}
+2025-01-30 21:13:55.094 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:13:55.084567', 'temperature': 106.8}
+2025-01-30 21:13:55.095 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:13:55.096 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:00.090 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:00.087915', 'temperature': 107.2}
+2025-01-30 21:14:00.098 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:00.087915', 'temperature': 107.2}
+2025-01-30 21:14:00.099 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:00.100 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:05.094 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:05.092862', 'temperature': 107.6}
+2025-01-30 21:14:05.101 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:05.092862', 'temperature': 107.6}
+2025-01-30 21:14:05.103 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:05.103 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:10.098 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:10.097295', 'temperature': 108.0}
+2025-01-30 21:14:10.104 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:10.097295', 'temperature': 108.0}
+2025-01-30 21:14:10.105 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:10.106 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:15.104 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:15.102292', 'temperature': 108.4}
+2025-01-30 21:14:15.108 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:15.102292', 'temperature': 108.4}
+2025-01-30 21:14:15.109 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:15.110 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:20.108 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:20.105661', 'temperature': 108.8}
+2025-01-30 21:14:20.114 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:20.105661', 'temperature': 108.8}
+2025-01-30 21:14:20.116 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:20.117 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:25.110 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:25.109506', 'temperature': 109.2}
+2025-01-30 21:14:25.117 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:25.109506', 'temperature': 109.2}
+2025-01-30 21:14:25.118 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:25.118 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:30.114 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:30.113161', 'temperature': 109.6}
+2025-01-30 21:14:30.124 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:30.113161', 'temperature': 109.6}
+2025-01-30 21:14:30.125 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:30.126 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:35.122 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:35.117123', 'temperature': 110.0}
+2025-01-30 21:14:35.128 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:35.117123', 'temperature': 110.0}
+2025-01-30 21:14:35.129 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:35.130 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:40.126 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:40.124240', 'temperature': 110.4}
+2025-01-30 21:14:40.133 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:40.124240', 'temperature': 110.4}
+2025-01-30 21:14:40.134 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:40.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:45.130 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:45.128823', 'temperature': 110.8}
+2025-01-30 21:14:45.133 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:45.128823', 'temperature': 110.8}
+2025-01-30 21:14:45.134 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:45.135 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:50.132 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:50.131927', 'temperature': 111.2}
+2025-01-30 21:14:50.140 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:50.131927', 'temperature': 111.2}
+2025-01-30 21:14:50.142 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:50.143 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:14:55.136 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:14:55.135359', 'temperature': 111.6}
+2025-01-30 21:14:55.139 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:14:55.135359', 'temperature': 111.6}
+2025-01-30 21:14:55.140 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:14:55.140 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:15:00.140 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:15:00.137458', 'temperature': 112.0}
+2025-01-30 21:15:00.148 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:15:00.137458', 'temperature': 112.0}
+2025-01-30 21:15:00.149 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:15:00.149 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:15:05.144 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:15:05.142206', 'temperature': 112.4}
+2025-01-30 21:15:05.153 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:15:05.142206', 'temperature': 112.4}
+2025-01-30 21:15:05.155 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:15:05.155 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:15:10.147 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:15:10.146076', 'temperature': 112.8}
+2025-01-30 21:15:10.155 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:15:10.146076', 'temperature': 112.8}
+2025-01-30 21:15:10.156 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:15:10.157 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:15:15.151 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:15:15.150110', 'temperature': 113.2}
+2025-01-30 21:15:15.269 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:15:15.150110', 'temperature': 113.2}
+2025-01-30 21:15:15.270 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:15:15.271 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:15:20.155 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:15:20.153651', 'temperature': 113.6}
+2025-01-30 21:15:20.164 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:15:20.153651', 'temperature': 113.6}
+2025-01-30 21:15:20.166 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:15:20.167 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:15:25.159 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:15:25.157771', 'temperature': 114.0}
+2025-01-30 21:15:25.168 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:15:25.157771', 'temperature': 114.0}
+2025-01-30 21:15:25.169 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:15:25.170 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:15:30.163 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:15:30.162445', 'temperature': 114.4}
+2025-01-30 21:15:30.173 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:15:30.162445', 'temperature': 114.4}
+2025-01-30 21:15:30.175 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:15:30.176 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 21:15:35.168 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T03:15:35.166897', 'temperature': 114.8}
+2025-01-30 21:15:35.176 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T03:15:35.166897', 'temperature': 114.8}
+2025-01-30 21:15:35.178 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-01-30 21:15:35.179 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
