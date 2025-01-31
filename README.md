@@ -92,6 +92,7 @@ You will need to:
 5. Know the full name of the module you want to run. Hint: Look in the producers folder.
 
 What did we name the topic used with csv data? 
+Cameron Landon: It was named "SMOKER_TOPIC"
 Hint: See the producer code and [.env](.env).
 
 ## Task 8. Start a CSV Consumer
