@@ -50,14 +50,8 @@ Windows:
 py -m producers.json_producer_case
 ```
 
-Mac/Linux:
-```zsh
-source .venv/bin/activate
-python3 -m producers.json_producer_case
-```
-
-What did we name the topic used with JSON data? 
-Hint: See the producer code and [.env](.env).
+What did we name the topic used with JSON data?
+Cameron Landon: 'topic'
 
 ## Task 6. Start a JSON Consumer
 
@@ -72,41 +66,35 @@ Windows:
 py -m consumers.json_consumer_case
 ```
 
-Mac/Linux:
-```zsh
-source .venv/bin/activate
-python3 -m consumers.json_consumer_case
-```
-
-What did we name the topic used with JSON data? 
-Hint: See the consumer code and [.env](.env).
+What did we name the topic used with JSON data?
+Cameron Landon: 'topic'
 
 ## Task 7. Start a CSV Producer
 
 Follow a similar process to start the csv producer. 
 You will need to:
-1. Open a new terminal. 
-2. Activate your .venv.
-3. Know the command that works on your machine to execute python (e.g. py or python3).
-4. Know how to use the -m (module flag to run your file as a module).
-5. Know the full name of the module you want to run. Hint: Look in the producers folder.
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m producers.csv_producer_case
+```
 
 What did we name the topic used with csv data?
-
-Cameron Landon: It was named "SMOKER_TOPIC"
-Hint: See the producer code and [.env](.env).
+Cameron Landon: "SMOKER_TOPIC"
 
 ## Task 8. Start a CSV Consumer
 
 Follow a similar process to start the csv consumer. 
 You will need to:
-1. Open a new terminal. 
-2. Activate your .venv.
-3. Know the command that works on your machine to execute python (e.g. py or python3).
-4. Know how to use the -m (module flag to run your file as a module).
-5. Know the full name of the module you want to run. Hint: Look in the consumers folder.
+Windows:
+```shell
+.venv\Scripts\activate
+py -m consumers.json_consumer_case
+```
 
-What did we name the topic used with csv data? 
+What did we name the topic used with csv data?
+Cameron Landon: "SMOKER_TOPIC"
 Hint: See the consumer code and [.env](.env).
 
 ## About the Smart Smoker (CSV Example)
