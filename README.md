@@ -91,7 +91,8 @@ You will need to:
 4. Know how to use the -m (module flag to run your file as a module).
 5. Know the full name of the module you want to run. Hint: Look in the producers folder.
 
-What did we name the topic used with csv data? 
+What did we name the topic used with csv data?
+
 Cameron Landon: It was named "SMOKER_TOPIC"
 Hint: See the producer code and [.env](.env).
 

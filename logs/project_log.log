@@ -4310,3 +4310,34 @@
 2025-01-30 20:56:41.417 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-01-31T02:56:41.407076', 'temperature': 115.6}
 2025-01-30 20:56:41.418 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
 2025-01-30 20:56:41.419 | INFO     | __main__:get_stall_threshold:60 - Max stall temperature range: 0.2 F
+2025-01-30 20:56:46.412 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:56:46.411629', 'temperature': 116.0}
+2025-01-30 20:56:51.417 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:56:51.415700', 'temperature': 116.4}
+2025-01-30 20:56:56.421 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:56:56.419593', 'temperature': 116.8}
+2025-01-30 20:57:01.425 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:01.424000', 'temperature': 117.2}
+2025-01-30 20:57:06.429 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:06.428162', 'temperature': 117.6}
+2025-01-30 20:57:11.433 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:11.431710', 'temperature': 118.0}
+2025-01-30 20:57:16.438 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:16.436382', 'temperature': 118.4}
+2025-01-30 20:57:21.441 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:21.440498', 'temperature': 118.8}
+2025-01-30 20:57:26.444 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:26.443906', 'temperature': 119.2}
+2025-01-30 20:57:31.447 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:31.446417', 'temperature': 119.6}
+2025-01-30 20:57:36.451 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:36.449648', 'temperature': 120.0}
+2025-01-30 20:57:41.456 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:41.454962', 'temperature': 120.4}
+2025-01-30 20:57:46.460 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:46.458710', 'temperature': 120.8}
+2025-01-30 20:57:51.465 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:51.463379', 'temperature': 121.2}
+2025-01-30 20:57:56.469 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:57:56.467773', 'temperature': 121.6}
+2025-01-30 20:58:01.472 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:01.471512', 'temperature': 122.0}
+2025-01-30 20:58:06.476 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:06.475212', 'temperature': 122.4}
+2025-01-30 20:58:11.480 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:11.478742', 'temperature': 122.8}
+2025-01-30 20:58:16.484 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:16.482604', 'temperature': 123.2}
+2025-01-30 20:58:21.487 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:21.486416', 'temperature': 123.6}
+2025-01-30 20:58:26.490 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:26.490273', 'temperature': 124.0}
+2025-01-30 20:58:31.493 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:31.492964', 'temperature': 124.4}
+2025-01-30 20:58:36.496 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:36.495318', 'temperature': 124.8}
+2025-01-30 20:58:41.499 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:41.497615', 'temperature': 125.2}
+2025-01-30 20:58:46.503 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:46.502101', 'temperature': 125.6}
+2025-01-30 20:58:51.508 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:51.505916', 'temperature': 126.0}
+2025-01-30 20:58:56.511 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:58:56.511759', 'temperature': 126.4}
+2025-01-30 20:59:01.515 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:59:01.513899', 'temperature': 126.8}
+2025-01-30 20:59:06.523 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:59:06.518271', 'temperature': 127.2}
+2025-01-30 20:59:11.528 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:59:11.526624', 'temperature': 127.6}
+2025-01-30 20:59:16.532 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-01-31T02:59:16.530360', 'temperature': 128.0}
