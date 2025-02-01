@@ -3,10 +3,18 @@
 #####################################
 
 import os
+import sys
+import time
+import pathlib
+import csv
 import json
-from collections import defaultdict, deque
+from datetime import datetime
 from dotenv import load_dotenv
-from utils.utils_consumer import create_kafka_consumer
+from utils.utils_producer import (
+    verify_services,
+    create_kafka_producer,
+    create_kafka_topic,
+)
 from utils.utils_logger import logger
 
 #####################################
@@ -20,90 +28,97 @@ def get_kafka_topic() -> str:
     logger.info(f"Kafka topic: {topic}")
     return topic
 
-def get_kafka_consumer_group_id() -> str:
-    group_id = os.getenv("DND_CONSUMER_GROUP_ID", "dnd_group")
-    logger.info(f"Kafka consumer group id: {group_id}")
-    return group_id
-
-def get_danger_threshold() -> int:
-    return int(os.getenv("DND_DANGER_THRESHOLD", 3))  # Number of consecutive hard/deadly encounters
+def get_message_interval() -> int:
+    interval = int(os.getenv("DND_INTERVAL_SECONDS", 2))
+    logger.info(f"Message interval: {interval} seconds")
+    return interval
 
 #####################################
-# Set up Data Stores
+# Set up Paths
 #####################################
 
-dangerous_encounters = deque(maxlen=get_danger_threshold())  # Tracks last N encounters
-monster_counts = defaultdict(int)  # Tracks number of times each monster appears
-collected_treasure = defaultdict(int)  # Tracks amount of different treasures collected
+PROJECT_ROOT = pathlib.Path(__file__).parent.parent
+logger.info(f"Project root: {PROJECT_ROOT}")
 
-def process_message(message: str) -> None:
-    try:
-        logger.debug(f"Raw message: {message}")
-        message_dict = json.loads(message)
-        logger.info(f"Processed JSON message: {message_dict}")
+DATA_FOLDER = PROJECT_ROOT.joinpath("data")
+logger.info(f"Data folder: {DATA_FOLDER}")
 
-        if isinstance(message_dict, dict):
-            event = message_dict.get("event", "Unknown Event")
-            location = message_dict.get("location", "Unknown Location")
-            difficulty = message_dict.get("difficulty", "Unknown Difficulty").lower()
-            creatures = message_dict.get("creatures", "None").split(",")
-            treasure = message_dict.get("treasure", "None").split(",")
+DATA_FILE = DATA_FOLDER.joinpath("dnd_encounters.csv")
+logger.info(f"Data file: {DATA_FILE}")
 
-            logger.info(f"Encounter: {event} at {location} (Difficulty: {difficulty.capitalize()})")
-            
-            # Danger Level Detector
-            if difficulty in ["hard", "deadly"]:
-                dangerous_encounters.append(difficulty)
-                if len(dangerous_encounters) >= get_danger_threshold():
-                    logger.warning(f"WARNING! {get_danger_threshold()} tough encounters in a row! Adventurers should be cautious!")
-            
-            # Monster Popularity Counter
-            for monster in creatures:
-                monster = monster.strip()
-                if monster:
-                    monster_counts[monster] += 1
-            logger.info(f"Monster counts so far: {dict(monster_counts)}")
-            
-            # Treasure Collector
-            for item in treasure:
-                item = item.strip()
-                if item:
-                    collected_treasure[item] += 1
-            logger.info(f"Treasure collected so far: {dict(collected_treasure)}")
-        
-        else:
-            logger.error(f"Expected a dictionary but got: {type(message_dict)}")
-    except json.JSONDecodeError:
-        logger.error(f"Invalid JSON message: {message}")
-    except Exception as e:
-        logger.error(f"Error processing message: {e}")
+#####################################
+# Message Generator
+#####################################
+
+def generate_messages(file_path: pathlib.Path):
+    while True:
+        try:
+            logger.info(f"Opening data file: {DATA_FILE}")
+            with open(DATA_FILE, "r") as csv_file:
+                csv_reader = csv.DictReader(csv_file)
+                for row in csv_reader:
+                    if "event" not in row or "location" not in row:
+                        logger.error(f"Invalid row format: {row}")
+                        continue
+                    
+                    message = {
+                        "timestamp": row.get("timestamp", datetime.utcnow().isoformat()),
+                        "location": row["location"],
+                        "event": row["event"],
+                        "difficulty": row.get("difficulty", "Unknown"),
+                        "creatures": row.get("creatures", "None"),
+                        "treasure": row.get("treasure", "None"),
+                    }
+                    logger.debug(f"Generated message: {message}")
+                    yield message
+        except FileNotFoundError:
+            logger.error(f"File not found: {file_path}. Exiting.")
+            sys.exit(1)
+        except Exception as e:
+            logger.error(f"Unexpected error in message generation: {e}")
+            sys.exit(3)
 
 #####################################
 # Main Function
 #####################################
 
-def main() -> None:
-    logger.info("START DnD Encounter Consumer.")
+def main():
+    logger.info("START DnD Encounter Producer.")
+    verify_services()
     topic = get_kafka_topic()
-    group_id = get_kafka_consumer_group_id()
-    logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
+    interval_secs = get_message_interval()
 
-    consumer = create_kafka_consumer(topic, group_id)
+    if not DATA_FILE.exists():
+        logger.error(f"Data file not found: {DATA_FILE}. Exiting.")
+        sys.exit(1)
+
+    producer = create_kafka_producer(value_serializer=lambda x: json.dumps(x).encode("utf-8"))
+    if not producer:
+        logger.error("Failed to create Kafka producer. Exiting...")
+        sys.exit(3)
 
     try:
-        for message in consumer:
-            message_str = message.value
-            logger.debug(f"Received message at offset {message.offset}: {message_str}")
-            process_message(message_str)
-    except KeyboardInterrupt:
-        logger.warning("Consumer interrupted by user.")
+        create_kafka_topic(topic)
+        logger.info(f"Kafka topic '{topic}' is ready.")
     except Exception as e:
-        logger.error(f"Error while consuming messages: {e}")
-    finally:
-        consumer.close()
-        logger.info(f"Kafka consumer for topic '{topic}' closed.")
+        logger.error(f"Failed to create or verify topic '{topic}': {e}")
+        sys.exit(1)
 
-    logger.info("END DnD Encounter Consumer.")
+    logger.info(f"Starting message production to topic '{topic}'...")
+    try:
+        for message in generate_messages(DATA_FILE):
+            producer.send(topic, value=message)
+            logger.info(f"Sent message: {message}")
+            time.sleep(interval_secs)
+    except KeyboardInterrupt:
+        logger.warning("Producer interrupted by user.")
+    except Exception as e:
+        logger.error(f"Error during message production: {e}")
+    finally:
+        producer.close()
+        logger.info("Kafka producer closed.")
+    
+    logger.info("END DnD Encounter Producer.")
 
 #####################################
 # Conditional Execution
